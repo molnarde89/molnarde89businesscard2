@@ -1,0 +1,182 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.profile-card {
+  width: 680px;
+  height: 380px;
+  background-color: hsla(0, 0%, 100%, .5);
+  background-size: cover;
+  border-radius: 5%;
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  font-family: Georgia;
+  color: rgba(0,0,0,.8);  
+  position: absolute;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background: url(assets/wallpaper.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.head {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.profile-image {
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%; 
+  padding: 1px;
+  background-color: #666;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(40%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+
+.content {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: right;
+  padding: 5% 3%;
+}
+
+.name-headline {
+   text-align: center;
+   margin-left: 10%;
+}
+
+em {
+  font-weight: bold;
+  color: #696969;
+}
+
+em:hover {
+  color: blue;
+}
+
+i {
+ color: rgba(38, 23, 27, 0.9);
+}
+
+i:hover {
+  color: rgba(99, 140, 190, 1);
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 7%;
+  margin-left: 15%;
+}
+
+li {
+  display: inline-block;
+  width: 28%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 26px; 
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.abaout {
+  letter-spacing: 2px;
+  line-height: 24px;
+  margin-top: 3%;
+  text-justify: inter-character;
+}
+
+
+/* Mobile és Tablet */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 340px;
+        height: 190px;
+        margin-top: -300px;
+    }
+    img {
+        width: 80%;
+        height: 80%;
+        margin-left: 8%;
+        margin-top: 10%;
+    }
+    .head {
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+    .content {
+        position: relative;
+        width: 60%;
+        height: 100%;
+        float: right;
+        padding: 5% 3%;
+    }
+    .name-headline {
+        text-align: center;
+        margin-left: 15%;
+    }
+    ul {
+        list-style-type: none;
+        margin-top: 4%;
+        margin-left: 15%;
+    }
+    li {
+        display: inline-block;
+        width: 28%;
+        font-size: 8px;
+    }
+    h1 {
+        font-size: 9px; 
+    }
+    h2 {
+        font-size: 8px;
+        margin-top: 5px;
+        margin-bottom: 4px;
+    }
+    .abaout {
+        line-height: 12px;
+        margin-top: 10px;
+        text-justify: inter-character;
+        font-size: 8px;
+    }
+    p {
+        font-size: 6px;
+    }
+    .content {
+        padding: 2% 3%;
+    }
+}
